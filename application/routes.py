@@ -23,7 +23,7 @@ def videos_data():
         videos = sorted(list.result.objects, key=lambda k: k.createdAt, reverse=True)[:20]
         dt_object = datetime.fromtimestamp
         sec_converter = timedelta
-        return render_template('demo_table.html', videos=videos, dt_object=dt_object, sec_converter=sec_converter)
+        return render_template('final.html', videos=videos, dt_object=dt_object, sec_converter=sec_converter)
 
     except:
         return render_template('some_thing_went_wrong.html')
