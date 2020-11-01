@@ -1,41 +1,18 @@
-# REST-API-message-system
+# Videos-Table-App
 
-The messaging system is a simple rest API system responsible for handling messages between users.
+The Videos Table App is a simple app that gives a nice presentation to your video media account at Kaltura inc.
 
-# Features
-1. Write a Message - a user can write a message that will save in the database.
-2. Get all Messages from a specific user - The app gets all the messages that a specific user has sent or received.
-3. Get all unread messages from a specific user - The app gets all the unread messages that a specific user has sent. or has received it.
-4. read a specific Message - This brings a specific message by id number. (user can only see his messages after login)
-5. Delete Message - The app enables to delete the specific message. (user can only see his messages after login)
+# Accessing the app
+1. User can access the app at https://kaltura-dan.herokuapp.com/videos_data/
 
-# Accessing the App
+# Featers
+The app is importing your last 20 entries (media) from your Kaltura account and displays them in a table.
 
-User can access the app from any browser or any API tool 
-I'll use Postman for demonstration purpose
+1. user can sort the table by the columnns by pressing the column title.
+2. User can filter the search resault using the free text field, the table will be filttered dynamically regardlles to the pagination.
 
-# Hosting
 
-The app hosted at https://auth-rest-api-app.herokuapp.com/
 
-# Using the app:
-
-First, you'll have to create a USER :
-
-Use Post method on this endpoint:https://auth-rest-api-app.herokuapp.com/user
-
-at the header section set Content-Type as the key
-                          application/json as the value 
-
-at the body section use "raw" and JSON
-
-``` swift
-{
-    "name": "some_name",
-    "password": "some_password",
-    
-}
-```
 
 
 
