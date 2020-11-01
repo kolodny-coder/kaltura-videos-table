@@ -18,11 +18,15 @@ def index():
 @app.route("/videos_data/")
 def videos_data():
 
-    videos = sorted(list.result.objects, key=lambda k: k.createdAt, reverse=True)[:20]
-    dt_object = datetime.fromtimestamp
-    sec_converter = timedelta
 
-    return render_template('demo_table.html', videos=videos, dt_object=dt_object, sec_converter=sec_converter)
+    try:
+        videos = sorted(list.result.objects, key=lambda k: k.createdAt, reverse=True)[:20]
+        dt_object = datetime.fromtimestamp
+        sec_converter = timedelta
+        return render_template('demo_table.html', videos=videos, dt_object=dt_object, sec_converter=sec_converter)
+
+    except:
+        return render_template('some_thing_went_wrong.html')
 
 @app.route("/delete_video", methods=["GET", "POST"])
 def delete_video():
