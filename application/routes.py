@@ -1,4 +1,5 @@
 from flask import Flask
+from application import app
 from flask import render_template, request, json, jsonify, Response, redirect, flash, url_for, session
 from datetime import datetime, timedelta
 # from application.models import User, Course, Enrollment
@@ -10,7 +11,7 @@ import list
 
 
 # Init app
-app = Flask(__name__)
+# app = Flask(__name__)
 
 @app.route("/index")
 def index():
@@ -35,6 +36,3 @@ def error_page():
     pass
 
     return  render_template('error.html')
-if __name__ == '__main__':
-    # app.run(threaded=True, port=5000)
-    app.run(debug=True)
