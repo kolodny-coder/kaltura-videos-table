@@ -1,5 +1,8 @@
 from KalturaClient import *
 from KalturaClient.Plugins.Core import *
+import os
+
+print(os.environ.get('KALTURA_SECRET'))
 
 config = KalturaConfiguration(3082203)
 config.serviceUrl = "https://www.kaltura.com/"

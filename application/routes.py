@@ -14,6 +14,7 @@ import list
 # app = Flask(__name__)
 
 @app.route("/index")
+@app.route("/")
 def index():
     return 'hey'
 
@@ -24,7 +25,7 @@ def videos_data(reverse=False):
     dt_object = datetime.fromtimestamp
     sec_converter = timedelta
 
-    return render_template('demo_table.html', videos=videos, video_data=False, dt_object=dt_object, sec_converter=sec_converter)
+    return render_template('videos_data.html', videos=videos, video_data=False, dt_object=dt_object, sec_converter=sec_converter)
 
 @app.route("/delete_video", methods=["GET", "POST"])
 def delete_video():
