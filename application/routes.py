@@ -1,17 +1,14 @@
-from flask import Flask
 from application import app
 from flask import render_template, request, json, jsonify, Response, redirect, flash, url_for, session
 from datetime import datetime, timedelta
+import list
 # from application.models import User, Course, Enrollment
 # from application.forms import LoginForm, RegistratinForm
 # from flask_restplus import Resource
 # from application.courses_list import course_list
-import list
 
 
 
-# Init app
-# app = Flask(__name__)
 
 @app.route("/index")
 @app.route("/")
@@ -19,13 +16,13 @@ def index():
     return 'hey'
 
 @app.route("/videos_data/")
-def videos_data(reverse=False):
+def videos_data():
 
-    videos = sorted(list.result.objects, key=lambda k: k.createdAt, reverse=reverse)[:20]
+    videos = sorted(list.result.objects, key=lambda k: k.createdAt, reverse=True)[:20]
     dt_object = datetime.fromtimestamp
     sec_converter = timedelta
 
-    return render_template('videos_data.html', videos=videos, video_data=False, dt_object=dt_object, sec_converter=sec_converter)
+    return render_template('demo_table.html', videos=videos, dt_object=dt_object, sec_converter=sec_converter)
 
 @app.route("/delete_video", methods=["GET", "POST"])
 def delete_video():
