@@ -1,0 +1,74 @@
+    {% extends "layout.html" %}
+    
+    {% block content %}
+    <h1>Video Table Info</h1>
+
+    <!--  Display the Term and Year here --->
+    <h3>Videos</h3>
+    <div class="form-inline col-md-12">
+
+            <div class="form-group col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                     <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+
+            <div id="sort-wrapper" class="input-group pull-right">
+                <span>Sort by creation date </span>
+                <button id="btn" data-toggle="collapse"><span id="caret-wrapper"><span class="caret"></span></span></button>
+            </div>
+
+
+    </div>
+
+    <div>
+        <table class="table table-hover">
+            <tr>
+
+                <th onclick="sortTable(1)" style="cursor:crosshair">Sort</th>
+
+        </tr>
+            <thead>
+                     <th onclick="sortTable(1)" style="cursor:crosshair">Sort</th>
+
+            <tr>
+                <th scope="col">Thumbnail</th>
+                <th scope="col">Name</th>
+                <th scope="col">Id</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Created At</th>
+                <th scope="col">Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <!-- Construct the rest of courses here -->
+            {% for data in videos %}
+            <tr>
+
+                <td scope='row'><img src="{{data['thumbnailUrl']}}" alt="alternatetext"></td>
+                <td>{{ data['name'] }}</td>
+                <td>{{ data['id'] }}</td>
+                <td>{{ sec_converter(seconds=data['duration']) }}</td>
+                <td>{{ dt_object(data['createdAt']) }}</td>
+                <td>{{ data['description'] }}</td>
+
+                <td>
+                    <form action="{{ url_for('videos_data') }}" method="POST">
+                        <input type="hidden" name="courseID" value="{{ data['courseID'] }}">
+                        <input type="hidden" name="title" value="{{ data['title'] }}">
+                        <input type="hidden" name="term" value ="{{ data['term'] }}">
+
+                    <button type="button" class="btn btn-danger" data-name="1_z5g9ooai-attachments">Delete</button>
+                </form>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

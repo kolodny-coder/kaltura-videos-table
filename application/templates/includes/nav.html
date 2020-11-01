@@ -1,0 +1,10 @@
+    <header>
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link {% if indx == True %} active{% endif %}">Home</a></li>
+                <li class="nav-item"><a href="{{ url_for('videos_data') }}" class="nav-link {% if courses == True %} active{% endif %}">Videos</a></li>
+
+            </ul>
+        </nav>
+        <hr style="clear:both">
+    </header>

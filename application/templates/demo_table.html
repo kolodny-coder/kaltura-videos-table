@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#33b5e5">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+    <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+    }
+  </style>
+    <link rel='stylesheet' id='wsl-widget-css'  href='https://mdbootstrap.com/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=5.5.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.19.1.min.css?ver=4.19.1' type='text/css' media='all' />
+
+
+</head>
+
+ <body class="fixed-sn mdb-skin-custom" data-spy="scroll" data-target="#scrollspy" data-offset="15">
+
+    <header>
+      <div id="dpl-auth-modal"></div>
+    </header>
+
+
+    <style>
+      .switch-version {
+        z-index: 1000;
+      }
+      .switch-to {
+        background-image: url('https://mdbootstrap.com/img/logo/mdb-switch.png');
+      }
+      .switch-to.mdb-standard {
+        background-position: 0 -160px;
+      }
+    </style>
+
+    <style>
+
+      .main-tabs-docs .nav-mtd {
+        white-space: nowrap;
+        overflow-x: auto;
+        position: relative;
+      }
+
+      @media (min-width: 62rem) {
+        .main-tabs-docs .nav-mtd {
+          overflow-x: hidden;
+        }
+      }
+
+      .main-tabs-docs .nav-mtd li a {
+        display: block;
+        padding: 20px 24px;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        font-weight: 500;
+        border-bottom: 3px solid #33b5e5;
+      }
+
+      .main-tabs-docs .nav-mtd li a.active {
+        border-bottom: 3px solid;
+        color: #fff;
+      }
+
+      @media (min-width: 62em) {
+        .main-tabs-docs .nav-mtd li:first-child {
+          margin-left: 56px;
+        }
+      }
+
+      .documentation .primary-heading {
+        font-size: 2.7rem;
+        font-weight: 500;
+      }
+
+      .documentation .secondary-heading {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #444343;
+        overflow: hidden;
+        padding-bottom: .3rem;
+        margin-bottom: .7rem;
+      }
+
+      .documentation .section-heading {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.4rem;
+      }
+
+      .documentation .docs-pills {
+        margin-top: 1.4rem;
+      }
+
+      .documentation .section-preview {
+        border: 1px solid #e0e0e0;
+        padding: 15px;
+      }
+
+      @media only screen and (max-width: 991px) {
+
+        .sticky,
+        .sticky2,
+        .sticky3,
+        .sticky-placeholder {
+          display: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .documentation .docs-pills .export-to-snippet {
+          display: none;
+        }
+
+        .documentation .docs-pills .btn-copy-code {
+          right: 0 !important;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .documentation .docs-pills .btn-copy-code {
+          display: none;
+        }
+      }
+    </style>
+
+    <main>
+
+        <div class="container-fluid mt-2"></div>
+
+        <style>
+      div.dataTables_wrapper div.dataTables_filter select,
+      div.dataTables_wrapper div.dataTables_length input,
+      div.dataTables_wrapper div.dataTables_length select {
+        width: auto
+      }
+
+      table.dataTable thead {
+        cursor: pointer
+      }
+
+      div.dataTables_wrapper div.dataTables_length.d-flex.flex-row label {
+        margin-top: 1.2rem;
+        margin-right: 1rem
+      }
+
+      div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select .select-dropdown,
+      div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select span {
+        margin-top: 1rem
+      }
+
+      div.dataTables_wrapper div.dataTables_filter label,
+      div.dataTables_wrapper div.dataTables_length label {
+        text-align: left;
+        font-weight: 400;
+        padding-top: .5rem;
+        padding-bottom: .5rem
+      }
+
+      div.dataTables_wrapper div.dataTables_info,
+      div.dataTables_wrapper div.dataTables_paginate {
+        font-weight: 400;
+        padding-top: 1rem;
+        padding-bottom: 1rem
+      }
+
+      div.dataTables_wrapper div.dataTables_filter {
+        text-align: right
+      }
+
+      div.dataTables_wrapper div.dataTables_filter input {
+        width: auto;
+        margin-left: .5rem;
+        display: inline-block
+      }
+
+      div.dataTables_wrapper div.dataTables_paginate {
+        text-align: right;
+        margin: 0
+      }
+
+      div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end
+      }
+
+      div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item.active .page-link:focus {
+        background-color: #4285f4
+      }
+
+      div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item .page-link:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none
+      }
+
+      @media (max-width:767px) {
+
+        div.dataTables_wrapper div .dataTables_filter,
+        div.dataTables_wrapper div .dataTables_info,
+        div.dataTables_wrapper div .dataTables_length,
+        div.dataTables_wrapper div .dataTables_paginate ul.pagination {
+          text-align: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center
+        }
+      }
+
+      .bs-select select {
+        display: inline-block !important
+      }
+
+      table.dataTable thead>tr>td.sorting,
+      table.dataTable thead>tr>td.sorting_asc,
+      table.dataTable thead>tr>td.sorting_desc,
+      table.dataTable thead>tr>th.sorting,
+      table.dataTable thead>tr>th.sorting_asc,
+      table.dataTable thead>tr>th.sorting_desc {
+        padding-right: 30px
+      }
+
+      table.dataTable thead>tr>td:active,
+      table.dataTable thead>tr>th:active {
+        outline: 0
+      }
+
+      table.dataTable thead .sorting,
+      table.dataTable thead .sorting_asc,
+      table.dataTable thead .sorting_asc_disabled,
+      table.dataTable thead .sorting_desc,
+      table.dataTable thead .sorting_desc_disabled {
+        cursor: pointer;
+        position: relative
+      }
+
+      table.dataTable thead .sorting:after,
+      table.dataTable thead .sorting:before,
+      table.dataTable thead .sorting_asc:after,
+      table.dataTable thead .sorting_asc:before,
+      table.dataTable thead .sorting_asc_disabled:after,
+      table.dataTable thead .sorting_asc_disabled:before,
+      table.dataTable thead .sorting_desc:after,
+      table.dataTable thead .sorting_desc:before,
+      table.dataTable thead .sorting_desc_disabled:after,
+      table.dataTable thead .sorting_desc_disabled:before {
+        position: absolute;
+        bottom: .5em;
+        display: block;
+        opacity: .3
+      }
+
+      table.dataTable thead .sorting:before,
+      table.dataTable thead .sorting_asc:before,
+      table.dataTable thead .sorting_asc_disabled:before,
+      table.dataTable thead .sorting_desc:before,
+      table.dataTable thead .sorting_desc_disabled:before {
+        right: 1em;
+        content: "\f0de";
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        font-size: 1rem
+      }
+
+      table.dataTable thead .sorting:after,
+      table.dataTable thead .sorting_asc:after,
+      table.dataTable thead .sorting_asc_disabled:after,
+      table.dataTable thead .sorting_desc:after,
+      table.dataTable thead .sorting_desc_disabled:after {
+        content: "\f0dd";
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        right: 16px;
+        font-size: 1rem
+      }
+
+      table.dataTable thead .sorting_asc:before,
+      table.dataTable thead .sorting_desc:after {
+        opacity: 1
+      }
+
+      table.dataTable thead .sorting_asc_disabled:before,
+      table.dataTable thead .sorting_desc_disabled:after {
+        opacity: 0
+      }
+    </style>
+
+
+
+        <hr class="my-4">
+
+
+
+      <!--Title-->
+      <h2 class="section-heading mb-4">
+        Videos List
+      </h2>
+
+      <!--Section: Live preview-->
+      <section>
+
+        <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+          <thead>
+
+            <tr>
+              <th class="th-sm">Thumbnail
+              </th>
+              <th class="th-sm">Name
+              </th>
+              <th class="th-sm">Id
+              </th>
+              <th class="th-sm">Duration
+              </th>
+              <th class="th-sm">Created At
+              </th>
+              <th class="th-sm">Description
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for data in videos %}
+            <tr>
+              <td scope='row'><img src="{{data['thumbnailUrl']}}" alt="alternatetext"></td>
+              <td>{{data['name']}}</td>
+              <td>{{data['id']}}</td>
+              <td>{{sec_converter(seconds=data['duration'])}}</td>
+              <td>{{dt_object(data['createdAt'])}}</td>
+              <td>{{data['description']}}</td>
+              <td> <form action="{{ url_for('delete_video') }}" method="POST">
+                            <input type="hidden" name="id" value="{{ data['id'] }}">
+<!--                            <input type="hidden" name="title" value="{{ data['title'] }}">-->
+<!--                            <input type="hidden" name="term" value ="{{ data['term'] }}">-->
+
+
+                          <button type="button" class="btn btn-danger" data-name="1_z5g9ooai-attachments">Delete</button>
+                    </form></td>
+
+            </tr>
+
+          {% endfor %}
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Thumbnail</th>
+              <th>Name</th>
+              <th>Id</th>
+              <th>Duration</th>
+              <th>Created At</th>
+              <th>Description</th>
+            </tr>
+          </tfoot>
+        </table>
+
+      </section>
+      <!--Section: Live preview-->
+
+
+    <script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/bundles/4.19.1/compiled.1.min.js?ver=4.19.1' id='mdb-js2-js'></script>
+                                                                                                                                                                    <!-- Datatables initialization -->
+    <script>
+
+      // Basic example
+      $(document).ready(function () {
+        $('#dtBasicExample').DataTable();
+
+        //Sorting options
+
+        $('#dtOrderExample').DataTable({
+          "order": [
+            [3, "desc"]
+          ]
+        });
+
+        $('#selectedColumn').DataTable({
+          "aaSorting": [],
+          columnDefs: [{
+            orderable: false,
+            targets: 3
+          }]
+        });
+        $('.dataTables_length').addClass('bs-select');
+      });
+    </script>
+
+    </main>
+ </body>
+
+</html>
