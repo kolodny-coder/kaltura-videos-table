@@ -11,6 +11,23 @@ The app is importing your last 20 entries (media) from your Kaltura account and 
 1. user can sort the table by the columnns by pressing the column title.
 2. User can filter the search resault using the free text field, the table will be filttered dynamically regardlles to the pagination.
 
+# API end point
+
+media add- end point: https://kaltura-dan.herokuapp.com/apiurl TODO
+
+get all media - by using GET method with this API end point:  https://kaltura-dan.herokuapp.com/api
+you will get a dictionary with all your media names and id's.
+
+``` swift
+https://kaltura-dan.herokuapp.com/api
+```
+
+output:
+
+
+
+
+
 
 
 
