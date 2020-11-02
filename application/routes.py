@@ -56,7 +56,7 @@ def index():
 @app.route("/videos_data/")
 def videos_data():
     try:
-        videos = sorted(list.result.objects, key=lambda k: k.createdAt, reverse=True)
+        videos = sorted(list.result.objects, key=lambda k: k.createdAt, reverse=True)[:20]
         dt_object = datetime.fromtimestamp
         sec_converter = timedelta
         return render_template('final.html', videos=videos, dt_object=dt_object, sec_converter=sec_converter)
