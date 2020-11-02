@@ -5,18 +5,18 @@ The Videos Table App is a simple app that gives a nice presentation to your vide
 # Accessing the app
 1. User can access the app at https://kaltura-dan.herokuapp.com/videos_data/
 
-# Featers
+# Features
 The app is importing your last 20 entries (media) from your Kaltura account and displays them in a table.
 
-1. user can sort the table by the columnns by pressing the column title.
-2. User can filter the search resault using the free text field, the table will be filttered dynamically regardlles to the pagination.
+1. user can sort the table by the columns by pressing the column title.
+2. User can filter the search results using the free text field, the table will be filtered dynamically regardless of the pagination.
 
-# API end point
+# API endpoint
 
 
 
-GET ALL MEDIA - by using GET method with this API end point:  https://kaltura-dan.herokuapp.com/api
-you will get a dictionary with all your media names and id's.
+GET ALL MEDIA - by using the GET method with this API endpoint:  https://kaltura-dan.herokuapp.com/api
+you will get a dictionary with all your media names and ids.
 
 ``` swift
 https://kaltura-dan.herokuapp.com/api
@@ -40,7 +40,7 @@ output:
 ```
 
 
-DELETE MEDIA - by using DELETE method with this API end point and specifing the id you fthe entry you want to delete:
+DELETE MEDIA - by using the DELETE method with this API endpoint and specifying the id you the entry you want to delete:
 
 ``` swift
 https://kaltura-dan.herokuapp.com/api/<id>
@@ -58,9 +58,9 @@ output:
 KalturaClient/test_routes.py
 ```
 
-some basicks API test written in Python unittest frame work
+some basics API test is written in the Python unittest framework
 
-# Preforamnce tests
+# Performance tests
 
 
 
