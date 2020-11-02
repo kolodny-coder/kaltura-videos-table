@@ -1,19 +1,15 @@
 from application import app, api
 from flask import render_template, request, jsonify
 from datetime import datetime, timedelta
-from kaltura_api_sessions import delete_entry, list, get_entry
+from kaltura_api_sessions.kaltura_envoke_sessions import delete, get_entry, add_media
+from kaltura_api_sessions import  list
 from flask_restplus import Resource
 
 
-# from application.models import User, Course, Enrollment
-# from application.forms import LoginForm, RegistratinForm
-# from flask_restplus import Resource
-# from application.courses_list import course_list
-
-
 ##################################################
+              #  API   #
 @api.route('/api', '/api/')
-class GetAndPost(Resource):
+class Get(Resource):
 
     # GET ALL
     def get(self):
@@ -27,9 +23,6 @@ class GetAndPost(Resource):
             output.append(entry_data)
         return jsonify({'entries': output})
 
-    def post(self):
-        pass
-
 
 @api.route('/api/<idx>')
 class GetUpdateDelete(Resource):
@@ -37,16 +30,16 @@ class GetUpdateDelete(Resource):
     # GET ONE
     def get(self, idx):
         try:
-            result = get_entry.get_entry(idx)
+            result = get_entry(idx)
             return result
         except:
             return jsonify({'message': 'Failed to get entry!'})
 
-    # DELETE
+    # DELETE ONE
     def delete(self, idx):
 
         try:
-            delete_entry.delete(idx)
+            delete(idx)
             return jsonify({'message': 'Entry item deleted!'})
         except:
             return jsonify({'message': 'Entry deleted Failed!'})

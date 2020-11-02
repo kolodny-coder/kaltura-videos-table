@@ -19,4 +19,5 @@ pager = KalturaFilterPager()
 result = client.media.list(filter, pager)
 #
 print(result.objects)
-# print(os.environ.get('KALTURA_SECRET'))
+
+print(os.environ.get('KALTURA_SECRET'))

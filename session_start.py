@@ -13,7 +13,7 @@ expiry = 86400
 privileges = ""
 
 result = client.session.start(secret, user_id, k_type, partner_id, expiry, privileges)
-print(result.objects)[0]
+print(result.objects)
 
 # file_data = open('application/static/video/Countdown Timer.mov', 'rb')
 #

@@ -1,14 +1,15 @@
 import unittest
 import requests
+from kaltura_api_sessions.kaltura_envoke_sessions import add_media, delete, get_entry
+import time
 from application import app
 from application import routes
 
 base_url = 'http://127.0.0.1:5000/'
+# base_url = 'https://kaltura-dan.herokuapp.com/'
 
 
-class TestRoutes(unittest.TestCase):
-    def test_videos_data(self):
-        pass
+class TestApi(unittest.TestCase):
 
     def test_get(self):
         with self.subTest('test that the Get api returns status code 200'):
@@ -17,28 +18,27 @@ class TestRoutes(unittest.TestCase):
         with self.subTest('test that the Get api returns status code 200'):
             self.assertEqual(type(response),  requests.models.Response)
 
-    # def test_add(self):
-    #     data = api.payload
-    #     new_entry ={url: 'some_url'}
-    #
-    #     self.assertEqual(response, new_entry)
 
     def test_delete(self):
         with self.subTest('deleting message runs successfully'):
             #creating video to delete
-            idx = '1_wr2535nv'
+            add_media()
+            time.sleep(60)
+
+
+
+            idx = '1_kjqjmwyb'
 
             # verifying the video has uploaded to media
             response = requests.get(url=base_url + 'api/' + idx)
             self.assertIsInstance(response.json(), dict)
             self.assertEqual(response.status_code, 200)
 
-            # deleting video
-            # idx = '1_6cjysqna'
-            # response = requests.delete(url=base_url + 'api/' + idx)
-            # self.assertEqual(response.json(), {'message': 'Entry item deleted!'})
+            # Deleting video
+            response = requests.delete(url=base_url + 'api/' + idx)
+            self.assertEqual(response.json(), {'message': 'Entry item deleted!'})
 
-            #verifying video is no longer in media
+            # verifying video is no longer in media
             response = requests.get(url=base_url + 'api/' + idx)
             self.assertIsInstance(response.json(), dict)
             self.assertEqual(response.status_code, 200)
