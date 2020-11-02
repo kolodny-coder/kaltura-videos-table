@@ -5,8 +5,8 @@ import time
 from application import app
 from application import routes
 
-base_url = 'http://127.0.0.1:5000/'
-# base_url = 'https://kaltura-dan.herokuapp.com/'
+# base_url = 'http://127.0.0.1:5000/'
+base_url = 'https://kaltura-dan.herokuapp.com/'
 
 
 class TestApi(unittest.TestCase):
