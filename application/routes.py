@@ -48,9 +48,9 @@ class GetUpdateDelete(Resource):
 ##################################################
 
 @app.route("/index")
-@app.route("/")
+@app.route("/home")
 def index():
-    return 'hey'
+    return render_template('home.html')
 
 
 @app.route("/videos_data/")
