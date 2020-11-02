@@ -60,7 +60,7 @@ KalturaClient/test_routes.py
 
 some basicks API test written in Python unittest frame work
 
-# preforamnce tests
+# Preforamnce tests
 
 
 
