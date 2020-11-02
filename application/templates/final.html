@@ -160,24 +160,59 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="container-fluid text-center top-container">
     <img src="{{ url_for('static',filename='images/uta-logo-200.png')}}">
 </div>
-
 <!--<header>-->
+<!--  <header>-->
+<div class="container-fluid mt-2">
+    <nav style="background-color: #92a8d1;">
+
+    </nav>
+<div/>
   <header>
-      <nav>
-          <ul class="nav nav-pills">
-              <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link {% if indx == True %} active{% endif %}">Home</a></li>
-              <li class="nav-item"><a href="{{ url_for('videos_data') }}" class="nav-link {% if courses == True %} active{% endif %}">Videos</a></li>
 
-          </ul>
-      </nav>
-      <hr style="clear:both">
-  </header>
+    <nav class="navbar navbar-expand-lg navbar-dark default-color">
+        <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+    <!--                  <li class="nav-item">-->
+                  <a href="{{ url_for('index') }}" class="nav-link {% if indx == True %} active{% endif %}">Home</a>
+                </li>
 
+            <li class="nav-item">
+              <a href="{{ url_for('videos_data') }}" class="nav-link {% if courses == True %} active{% endif %}">Videos</a>
+            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+<!--      <hr style="clear:both">-->
+<!--  </header>-->
 <!--</header>-->
-
-
 <!-- Switch -->
-
 
 <style>
   .switch-version {
