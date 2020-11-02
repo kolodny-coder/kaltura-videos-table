@@ -8,9 +8,17 @@ client = KalturaClient(config)
 secret = "KALTURA_SECRET"
 user_id = "Kolodnydan@gmail.com"
 k_type = KalturaSessionType.USER
-partner_id = "PARTNE_ID"
+partner_id = 3082203
 expiry = 86400
 privileges = ""
 
 result = client.session.start(secret, user_id, k_type, partner_id, expiry, privileges)
-print(result.objects[0])
+print(result.objects)[0]
+
+# file_data = open('application/static/video/Countdown Timer.mov', 'rb')
+#
+# result = client.media.upload(file_data)
+# one = sorted(result.objects, key=lambda k: k.createdAt, reverse=True)
+# for i in one:
+#     print(i)
+# print(one[1])
