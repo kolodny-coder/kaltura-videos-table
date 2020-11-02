@@ -62,16 +62,16 @@ some basics API test is written in the Python unittest framework
 
 # Performance tests
 
-The web page preformance measgered in 3 basick loads,
+The web page performance measured in 3 basic loads,
 20 entries - Load time 1.54s
 50 entries - Load time 3.14s
-100 entrires - Load time 1.88 s
+100 entries - Load time 1.88 s
 
-full web performance storedhere - https://my.pingdom.com/app/3/home
+full web performance stored here - https://my.pingdom.com/app/3/home
 
-# Secuirity
-Secert Keys stores a enviroment variables on the server.
-no authoritation required to access the app
+# Security
+Secret Keys stores as environment variables on the server.
+no authorization required to access the app
 
 
 
