@@ -6,10 +6,6 @@
 
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="theme-color" content="#33b5e5">
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 
@@ -20,96 +16,14 @@
       <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css')}}"/>
 
 
-    <link rel="shortcut icon" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/favicon.ico" />
 
-    <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<script type="text/javascript">var ajax_url = 'https://mdbootstrap.com/wp-load.php';</script><script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<script type="text/javascript">var ajax_url = 'https://mdbootstrap.com/wp-load.php';</script><script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<script type="text/javascript">var ajax_url = 'https://mdbootstrap.com/wp-load.php';</script>
-
-	<meta name="description" content="Bootstrap table sort functionality lets you sort the data of the tables according to any specific columns. It&#039;s easy to implement and use." />
-	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-	<link rel="canonical" href="https://mdbootstrap.com/docs/jquery/tables/sort/" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Bootstrap table sort - examples &amp; tutorial. Basic &amp; advanced usage" />
-	<meta property="og:description" content="Bootstrap table sort functionality lets you sort the data of the tables according to any specific columns. It&#039;s easy to implement and use." />
-	<meta property="og:url" content="https://mdbootstrap.com/docs/jquery/tables/sort/" />
-	<meta property="og:site_name" content="Material Design for Bootstrap" />
-	<meta property="article:publisher" content="https://www.facebook.com/mdbootstrap" />
-	<meta property="article:author" content="https://www.facebook.com/m.k.szymanski" />
-	<meta property="article:modified_time" content="2019-02-27T08:22:08+00:00" />
-	<meta property="og:image" content="https://mdbootstrap.com/wp-content/uploads/2015/08/table-fb.jpg" />
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="628" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Bootstrap table sort - examples &amp; tutorial. Basic &amp; advanced usage" />
-	<meta name="twitter:description" content="Bootstrap table sort functionality lets you sort the data of the tables according to any specific columns. It&#039;s easy to implement and use." />
-	<meta name="twitter:image" content="https://mdbootstrap.com/wp-content/uploads/2015/08/table-fb.jpg" />
-	<meta name="twitter:creator" content="@https://twitter.com/ascensus_mdb" />
-	<meta name="twitter:site" content="@MDBootstrap" />
-
-
-<link rel='dns-prefetch' href='//s.w.org' />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/mdbootstrap.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.3"}};
-			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-	<link rel='stylesheet' id='dashicons-css'  href='https://mdbootstrap.com/wp-includes/css/dashicons.min.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='admin-bar-css'  href='https://mdbootstrap.com/wp-includes/css/admin-bar.min.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-css'  href='https://mdbootstrap.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wc-block-vendors-style-css'  href='https://mdbootstrap.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css?ver=3.4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='wc-block-style-css'  href='https://mdbootstrap.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=3.4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='contact-form-7-css'  href='https://mdbootstrap.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wsl-widget-css'  href='https://mdbootstrap.com/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=5.5.3' type='text/css' media='all' />
 <link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.19.1.min.css?ver=4.19.1' type='text/css' media='all' />
-<script type='text/fkalturaavascript' id='tutorial-share-counts-js-extra'>
-/* <![CDATA[ */
-var shareCountsData = {"oldShareCounts":""};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://mdbootstrap.com/wp-admin/load-scripts.php?c=gzip&amp;load%5Bchunk_0%5D=jquery-core&amp;ver=5.5.3'></script>
-<script type='text/javascript' src='https://mdbootstrap.com/wp-content/plugins/bitpay-checkout-for-woocommerce/js/bitpayquickpay_js.js?ver=5.5.3' id='bitpayquickpay-js-js'></script>
-<script type='text/javascript' src='https://mdbootstrap.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-woocommerce-classic.js?ver=1.11.5' id='gtm4wp-woocommerce-classic-js'></script>
-<script type='text/javascript' src='https://mdbootstrap.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-woocommerce-enhanced.js?ver=1.11.5' id='gtm4wp-woocommerce-enhanced-js'></script>
-<script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/mdb-search.js?ver=4.19.1-update.1' id='mdb-search.js-js'></script>
-<script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/tutorial-share-counts.js?ver=4.19.1-update.4' id='tutorial-share-counts-js'></script>
 <link rel="https://api.w.org/" href="https://mdbootstrap.com/wp-json/" /><link rel="alternate" type="application/json" href="https://mdbootstrap.com/wp-json/wp/v2/pages/52470" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mdbootstrap.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://mdbootstrap.com/wp-includes/wlwmanifest.xml" />
-<meta name="generator" content="WordPress 5.5.3" />
-<meta name="generator" content="WooCommerce 4.6.1" />
 <link rel='shortlink' href='https://mdbootstrap.com/?p=52470' />
 <link rel="alternate" type="application/json+oembed" href="https://mdbootstrap.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmdbootstrap.com%2Fdocs%2Fjquery%2Ftables%2Fsort%2F" />
 <link rel="alternate" type="text/xml+oembed" href="https://mdbootstrap.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmdbootstrap.com%2Fdocs%2Fjquery%2Ftables%2Fsort%2F&#038;format=xml" />
 
-<!-- Google Tag Manager for WordPress by gtm4wp.com -->
-<script data-cfasync="false" data-pagespeed-no-defer>//<![CDATA[
-	var dataLayer_content = {"customerTotalOrders":0,"customerTotalOrderValue":"0.00","customerFirstName":"","customerLastName":"","customerBillingFirstName":"","customerBillingLastName":"","customerBillingCompany":"","customerBillingAddress1":"","customerBillingAddress2":"","customerBillingCity":"","customerBillingPostcode":"","customerBillingCountry":"","customerBillingEmail":"","customerBillingPhone":"","customerShippingFirstName":"","customerShippingLastName":"","customerShippingCompany":"","customerShippingAddress1":"","customerShippingAddress2":"","customerShippingCity":"","customerShippingPostcode":"","customerShippingCountry":""};
-	dataLayer.push( dataLayer_content );//]]>
-</script>
-<script data-cfasync="false">//<![CDATA[
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W7MBMN');//]]>
-</script>
-<!-- End Google Tag Manager -->
-<!-- End Google Tag Manager for WordPress by gtm4wp.com -->	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
 	<link rel="icon" href="https://mdbootstrap.com/wp-content/uploads/2016/11/cropped-ms-icon-310x310-32x32.png" sizes="32x32" />
 <link rel="icon" href="https://mdbootstrap.com/wp-content/uploads/2016/11/cropped-ms-icon-310x310-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://mdbootstrap.com/wp-content/uploads/2016/11/cropped-ms-icon-310x310-180x180.png" />
