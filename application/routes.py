@@ -1,10 +1,7 @@
 from datetime import datetime, timedelta
-
 from flask import render_template, request
-
 from flask import jsonify
 from flask_restplus import Resource
-
 from application import api, app
 from kaltura_api_sessions.kaltura_envoke_sessions import delete, get_entry
 from kaltura_api_sessions import list
@@ -52,7 +49,7 @@ class GetUpdateDelete(Resource):
             return jsonify({'message': 'Entry deleted Failed!'})
 
 
-
+# Routes
 @app.route("/index")
 @app.route("/home")
 def index():
