@@ -49,12 +49,6 @@ class GetUpdateDelete(Resource):
             return jsonify({'message': 'Entry deleted Failed!'})
 
 
-# Routes
-@app.route("/index")
-@app.route("/home")
-def index():
-    return render_template('home.html')
-
 
 @app.route("/videos_data/")
 def videos_data():
