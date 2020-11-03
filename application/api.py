@@ -3,6 +3,7 @@ from flask_restplus import Resource
 
 from application import api
 from kaltura_api_sessions.kaltura_envoke_sessions import delete, get_entry
+from kaltura_api_sessions import list
 
 
 @api.route('/api', '/api/')
