@@ -6,65 +6,29 @@
 
 
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 
 
       <title>Kaltura</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
 
 <link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.19.1.min.css?ver=4.19.1' type='text/css' media='all' />
-<link rel="https://api.w.org/" href="https://mdbootstrap.com/wp-json/" /><link rel="alternate" type="application/json" href="https://mdbootstrap.com/wp-json/wp/v2/pages/52470" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mdbootstrap.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://mdbootstrap.com/wp-includes/wlwmanifest.xml" />
-<link rel='shortlink' href='https://mdbootstrap.com/?p=52470' />
-<link rel="alternate" type="application/json+oembed" href="https://mdbootstrap.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmdbootstrap.com%2Fdocs%2Fjquery%2Ftables%2Fsort%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://mdbootstrap.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmdbootstrap.com%2Fdocs%2Fjquery%2Ftables%2Fsort%2F&#038;format=xml" />
-
-	<link rel="icon" href="https://mdbootstrap.com/wp-content/uploads/2016/11/cropped-ms-icon-310x310-32x32.png" sizes="32x32" />
-<link rel="icon" href="https://mdbootstrap.com/wp-content/uploads/2016/11/cropped-ms-icon-310x310-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://mdbootstrap.com/wp-content/uploads/2016/11/cropped-ms-icon-310x310-180x180.png" />
-<meta name="msapplication-TileImage" content="https://mdbootstrap.com/wp-content/uploads/2016/11/cropped-ms-icon-310x310-270x270.png" />
-    <script> var currency = '$'; </script>
-    <meta name="p:domain_verify" content="ba4bb1f26dcf05eadc4ea92722eca381"/>
-
-
-<!-- Ahref verification -->
-<meta name="ahrefs-site-verification" content="cd945a30a32beb9f20f22626c5f801f2063a726c6fd9af1db55ce27eafaa1e45">
 
 </head>
 
 <body class="fixed-sn mdb-skin-custom" data-spy="scroll" data-target="#scrollspy" data-offset="15">
-
-<!--<header>-->
-<!--  <header>-->
 <div class="container-fluid mt-2">
     <nav style="background-color: #92a8d1;">
-
     </nav>
-<div/>
   <header>
 
     <nav class="navbar navbar-expand-lg navbar-dark default-color">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
 
             <li class="nav-item">
               <a href="{{ url_for('videos_data') }}" class="nav-link {% if courses == True %} active{% endif %}">Videos</a>
             </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                </li>
             </ul>
             <ul class="navbar-nav nav-flex-icons">
                 <li class="nav-item">
@@ -196,250 +160,237 @@
             <div class="tab-content">
                 <div class="tab-pane fade in show active" id="docsTabsOverview" role="tabpanel">
 
-                  <div class="row">
+                      <div class="row">
 
-                    <div class="col-lg-10 col-md-12">
-                      <div class="d-flex justify-content-end">
-                      </div>
-                      <section class="documentation">
-<style>
-  div.dataTables_wrapper div.dataTables_filter select,
-  div.dataTables_wrapper div.dataTables_length input,
-  div.dataTables_wrapper div.dataTables_length select {
-    width: auto
-  }
-
-  table.dataTable thead {
-    cursor: pointer
-  }
-
-  div.dataTables_wrapper div.dataTables_length.d-flex.flex-row label {
-    margin-top: 1.2rem;
-    margin-right: 1rem
-  }
-
-  div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select .select-dropdown,
-  div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select span {
-    margin-top: 1rem
-  }
-
-  div.dataTables_wrapper div.dataTables_filter label,
-  div.dataTables_wrapper div.dataTables_length label {
-    text-align: left;
-    font-weight: 400;
-    padding-top: .5rem;
-    padding-bottom: .5rem
-  }
-
-  div.dataTables_wrapper div.dataTables_info,
-  div.dataTables_wrapper div.dataTables_paginate {
-    font-weight: 400;
-    padding-top: 1rem;
-    padding-bottom: 1rem
-  }
-
-  div.dataTables_wrapper div.dataTables_filter {
-    text-align: right
-  }
-
-  div.dataTables_wrapper div.dataTables_filter input {
-    width: auto;
-    margin-left: .5rem;
-    display: inline-block
-  }
-
-  div.dataTables_wrapper div.dataTables_paginate {
-    text-align: right;
-    margin: 0
-  }
-
-  div.dataTables_wrapper div.dataTables_paginate ul.pagination {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end
-  }
-
-  div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item.active .page-link:focus {
-    background-color: #4285f4
-  }
-
-  div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item .page-link:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none
-  }
-
-  @media (max-width:767px) {
-
-    div.dataTables_wrapper div .dataTables_filter,
-    div.dataTables_wrapper div .dataTables_info,
-    div.dataTables_wrapper div .dataTables_length,
-    div.dataTables_wrapper div .dataTables_paginate ul.pagination {
-      text-align: center;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center
-    }
-  }
-
-  .bs-select select {
-    display: inline-block !important
-  }
-
-  table.dataTable thead>tr>td.sorting,
-  table.dataTable thead>tr>td.sorting_asc,
-  table.dataTable thead>tr>td.sorting_desc,
-  table.dataTable thead>tr>th.sorting,
-  table.dataTable thead>tr>th.sorting_asc,
-  table.dataTable thead>tr>th.sorting_desc {
-    padding-right: 30px
-  }
-
-  table.dataTable thead>tr>td:active,
-  table.dataTable thead>tr>th:active {
-    outline: 0
-  }
-
-  table.dataTable thead .sorting,
-  table.dataTable thead .sorting_asc,
-  table.dataTable thead .sorting_asc_disabled,
-  table.dataTable thead .sorting_desc,
-  table.dataTable thead .sorting_desc_disabled {
-    cursor: pointer;
-    position: relative
-  }
-
-  table.dataTable thead .sorting:after,
-  table.dataTable thead .sorting:before,
-  table.dataTable thead .sorting_asc:after,
-  table.dataTable thead .sorting_asc:before,
-  table.dataTable thead .sorting_asc_disabled:after,
-  table.dataTable thead .sorting_asc_disabled:before,
-  table.dataTable thead .sorting_desc:after,
-  table.dataTable thead .sorting_desc:before,
-  table.dataTable thead .sorting_desc_disabled:after,
-  table.dataTable thead .sorting_desc_disabled:before {
-    position: absolute;
-    bottom: .5em;
-    display: block;
-    opacity: .3
-  }
-
-  table.dataTable thead .sorting:before,
-  table.dataTable thead .sorting_asc:before,
-  table.dataTable thead .sorting_asc_disabled:before,
-  table.dataTable thead .sorting_desc:before,
-  table.dataTable thead .sorting_desc_disabled:before {
-    right: 1em;
-    content: "\f0de";
-    font-family: 'Font Awesome\ 5 Free';
-    font-weight: 900;
-    font-size: 1rem
-  }
-
-  table.dataTable thead .sorting:after,
-  table.dataTable thead .sorting_asc:after,
-  table.dataTable thead .sorting_asc_disabled:after,
-  table.dataTable thead .sorting_desc:after,
-  table.dataTable thead .sorting_desc_disabled:after {
-    content: "\f0dd";
-    font-family: 'Font Awesome\ 5 Free';
-    font-weight: 900;
-    right: 16px;
-    font-size: 1rem
-  }
-
-  table.dataTable thead .sorting_asc:before,
-  table.dataTable thead .sorting_desc:after {
-    opacity: 1
-  }
-
-  table.dataTable thead .sorting_asc_disabled:before,
-  table.dataTable thead .sorting_desc_disabled:after {
-    opacity: 0
-  }
-</style>
-
-
-<!--Section: -->
-<section id="basic-example">
-
-  <!--Title-->
-  <h2 class="section-heading mb-4">
-    Videos Table
-  </h2>
-
-  <!--Section: Videos table-->
-  <section>
-
-    <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-      <thead>
-        <tr>
-          <th class="th-sm">Thumbnail
-          </th>
-          <th class="th-sm">Name
-          </th>
-          <th class="th-sm">Id
-          </th>
-          <th class="th-sm">Duration
-          </th>
-          <th class="th-sm">Created At
-          </th>
-          <th class="th-sm">Description
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-      {% for data in videos %}
-        <tr>
-          <td scope='row'><img src="{{data['thumbnailUrl']}}" alt="alternatetext"></td>
-          <td>{{data['name']}}</td>
-          <td>{{data['id']}}</td>
-          <td>{{sec_converter(seconds=data['duration'])}}</td>
-          <td>{{dt_object(data['createdAt'])}}</td>
-          <td>{{data['description']}}</td>
-        </tr>
-      {% endfor %}
-      </tbody>
-      <tfoot>
-        <tr>
-          <th>Thumbnail
-          </th>
-          <th>Name
-          </th>
-          <th>Id
-          </th>
-          <th>Duration
-          </th>
-          <th>Created At
-          </th>
-          <th>Description
-          </th>
-        </tr>
-      </tfoot>
-    </table>
-
-  </section>
-
-</section>
-
-<!--/Section: -->                      </section>
-                      <!--Section: Docs content-->
-                    </div>
-                    <!--Grid column: Content-->
-
-
-                  </div>
-                  <!--Grid row-->
-
-                </div>
+                        <div class="col-lg-10 col-md-12">
+                              <div class="d-flex justify-content-end">
                               </div>
+                              <section class="documentation">
+                              <style>
+                              div.dataTables_wrapper div.dataTables_filter select,
+                              div.dataTables_wrapper div.dataTables_length input,
+                              div.dataTables_wrapper div.dataTables_length select {
+                                width: auto
+                              }
+
+                              table.dataTable thead {
+                                cursor: pointer
+                              }
+
+                              div.dataTables_wrapper div.dataTables_length.d-flex.flex-row label {
+                                margin-top: 1.2rem;
+                                margin-right: 1rem
+                              }
+
+                              div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select .select-dropdown,
+                              div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select span {
+                                margin-top: 1rem
+                              }
+
+                              div.dataTables_wrapper div.dataTables_filter label,
+                              div.dataTables_wrapper div.dataTables_length label {
+                                text-align: left;
+                                font-weight: 400;
+                                padding-top: .5rem;
+                                padding-bottom: .5rem
+                              }
+
+                              div.dataTables_wrapper div.dataTables_info,
+                              div.dataTables_wrapper div.dataTables_paginate {
+                                font-weight: 400;
+                                padding-top: 1rem;
+                                padding-bottom: 1rem
+                              }
+
+                              div.dataTables_wrapper div.dataTables_filter {
+                                text-align: right
+                              }
+
+                              div.dataTables_wrapper div.dataTables_filter input {
+                                width: auto;
+                                margin-left: .5rem;
+                                display: inline-block
+                              }
+
+                              div.dataTables_wrapper div.dataTables_paginate {
+                                text-align: right;
+                                margin: 0
+                              }
+
+                              div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+                                -webkit-box-pack: end;
+                                -webkit-justify-content: flex-end;
+                                -ms-flex-pack: end;
+                                justify-content: flex-end
+                              }
+
+                              div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item.active .page-link:focus {
+                                background-color: #4285f4
+                              }
+
+                              div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item .page-link:focus {
+                                -webkit-box-shadow: none;
+                                box-shadow: none
+                              }
+
+                              @media (max-width:767px) {
+
+                                div.dataTables_wrapper div .dataTables_filter,
+                                div.dataTables_wrapper div .dataTables_info,
+                                div.dataTables_wrapper div .dataTables_length,
+                                div.dataTables_wrapper div .dataTables_paginate ul.pagination {
+                                  text-align: center;
+                                  -webkit-box-pack: center;
+                                  -webkit-justify-content: center;
+                                  -ms-flex-pack: center;
+                                  justify-content: center
+                                }
+                              }
+
+                              .bs-select select {
+                                display: inline-block !important
+                              }
+
+                              table.dataTable thead>tr>td.sorting,
+                              table.dataTable thead>tr>td.sorting_asc,
+                              table.dataTable thead>tr>td.sorting_desc,
+                              table.dataTable thead>tr>th.sorting,
+                              table.dataTable thead>tr>th.sorting_asc,
+                              table.dataTable thead>tr>th.sorting_desc {
+                                padding-right: 30px
+                              }
+
+                              table.dataTable thead>tr>td:active,
+                              table.dataTable thead>tr>th:active {
+                                outline: 0
+                              }
+
+                              table.dataTable thead .sorting,
+                              table.dataTable thead .sorting_asc,
+                              table.dataTable thead .sorting_asc_disabled,
+                              table.dataTable thead .sorting_desc,
+                              table.dataTable thead .sorting_desc_disabled {
+                                cursor: pointer;
+                                position: relative
+                              }
+
+                              table.dataTable thead .sorting:after,
+                              table.dataTable thead .sorting:before,
+                              table.dataTable thead .sorting_asc:after,
+                              table.dataTable thead .sorting_asc:before,
+                              table.dataTable thead .sorting_asc_disabled:after,
+                              table.dataTable thead .sorting_asc_disabled:before,
+                              table.dataTable thead .sorting_desc:after,
+                              table.dataTable thead .sorting_desc:before,
+                              table.dataTable thead .sorting_desc_disabled:after,
+                              table.dataTable thead .sorting_desc_disabled:before {
+                                position: absolute;
+                                bottom: .5em;
+                                display: block;
+                                opacity: .3
+                              }
+
+                              table.dataTable thead .sorting:before,
+                              table.dataTable thead .sorting_asc:before,
+                              table.dataTable thead .sorting_asc_disabled:before,
+                              table.dataTable thead .sorting_desc:before,
+                              table.dataTable thead .sorting_desc_disabled:before {
+                                right: 1em;
+                                content: "\f0de";
+                                font-family: 'Font Awesome\ 5 Free';
+                                font-weight: 900;
+                                font-size: 1rem
+                              }
+
+                              table.dataTable thead .sorting:after,
+                              table.dataTable thead .sorting_asc:after,
+                              table.dataTable thead .sorting_asc_disabled:after,
+                              table.dataTable thead .sorting_desc:after,
+                              table.dataTable thead .sorting_desc_disabled:after {
+                                content: "\f0dd";
+                                font-family: 'Font Awesome\ 5 Free';
+                                font-weight: 900;
+                                right: 16px;
+                                font-size: 1rem
+                              }
+
+                              table.dataTable thead .sorting_asc:before,
+                              table.dataTable thead .sorting_desc:after {
+                                opacity: 1
+                              }
+
+                              table.dataTable thead .sorting_asc_disabled:before,
+                              table.dataTable thead .sorting_desc_disabled:after {
+                                opacity: 0
+                              }
+                            </style>
+
+
+                               <section id="basic-example">
+
+                          <h2 class="section-heading mb-4">
+                            Videos Table
+                          </h2>
+
+                          <section>
+
+                            <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th class="th-sm">Thumbnail
+                                  </th>
+                                  <th class="th-sm">Name
+                                  </th>
+                                  <th class="th-sm">Id
+                                  </th>
+                                  <th class="th-sm">Duration
+                                  </th>
+                                  <th class="th-sm">Created At
+                                  </th>
+                                  <th class="th-sm">Description
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                              {% for data in videos %}
+                                <tr>
+                                  <td scope='row'><img src="{{data['thumbnailUrl']}}" alt="alternatetext"></td>
+                                  <td>{{data['name']}}</td>
+                                  <td>{{data['id']}}</td>
+                                  <td>{{sec_converter(seconds=data['duration'])}}</td>
+                                  <td>{{dt_object(data['createdAt'])}}</td>
+                                  <td>{{data['description']}}</td>
+                                </tr>
+                              {% endfor %}
+                              </tbody>
+                              <tfoot>
+                                <tr>
+                                  <th>Thumbnail
+                                  </th>
+                                  <th>Name
+                                  </th>
+                                  <th>Id
+                                  </th>
+                                  <th>Duration
+                                  </th>
+                                  <th>Created At
+                                  </th>
+                                  <th>Description
+                                  </th>
+                                </tr>
+                              </tfoot>
+                            </table>
+
+                          </section>
+
+                        </section></section>
+                        </div>
+                      </div>
+                </div>
             </div>
 
           </div>
-          <!-- Main docs tabs -->
-
+        </div>
 
       </main>
 
@@ -453,17 +404,7 @@
 
 
 
-        <script type="text/javascript">
-			var xlwcty_info = [];        </script>
-		<link rel='stylesheet' id='woocommerce-currency-switcher-css'  href='https://mdbootstrap.com/wp-content/plugins/woocommerce-currency-switcher/css/front.css?ver=2.3.1' type='text/css' media='all' />
 <script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/bundles/4.19.1/compiled.1.min.js?ver=4.19.1' id='mdb-js2-js'></script>
-<script>
-  $(document).ready(function() {
-    $(".button-collapse").sideNav();
-    var el = document.querySelector('.custom-scrollbar');
-    var ps = new PerfectScrollbar(el);
-  });
-</script>
 <script>
 
   // Basic example
@@ -489,6 +430,6 @@
   });
 </script>
 
-    </body>
+</body>
 
 </html>
